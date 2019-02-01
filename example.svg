@@ -1,0 +1,25 @@
+<svg width="300" height="200" viewBox="-100 -100 300 200" font-weight="bold">
+  <defs>
+    <pattern id="stripes-COATING" width="10%" height="10%" viewBox="0,0,4,4" patternTransform="rotate(45)">
+  <path stroke="grey" d="M0,0 V4 M2,0 V4 M4,0 V4"></path>
+</pattern>
+  </defs>
+<circle fill="url(#stripes-COATING)" r="100" />
+<line stroke="grey" stroke-width="3" x1="0" y1="-80" x2="125" y2="-80" />
+<text fill="grey" x="130" y="-80"
+      alignment-baseline="middle" text-anchor="start">
+  COATING
+</text>
+<circle fill="#555" r="70" />
+<line stroke="#555" stroke-width="3" x1="0" y1="50" x2="125" y2="50" />
+<text fill="#555" x="130" y="50"
+      alignment-baseline="middle" text-anchor="start">
+  SHELL
+</text>
+<circle fill="#cf2323" r="40" />
+<line stroke="#cf2323" stroke-width="3" x1="0" y1="0" x2="0" y2="0" />
+<text fill="white" x="0" y="0"
+      alignment-baseline="middle" text-anchor="middle">
+  CORE
+</text>
+</svg>

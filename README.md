@@ -22,6 +22,8 @@ const svg = new nanoviz.nanoMaterial([
 
 ### `nanoviz.nanoMaterial`
 
+![Example for the 'enanomapper' style](./example.svg)
+
 Create an SVG with three parts, a core, a shell and a coating.
 
 ```ts
