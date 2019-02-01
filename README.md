@@ -13,14 +13,16 @@ Library to create SVG visualisations for nano materials.
 ```js
 const nanoviz = require('nanoviz-svg')
 
-const svg = new nanoviz.nanoMaterial([
+const svg = nanoviz.nanoMaterial([
   {label: 'CORE'},
   {label: 'SHELL'},
   {label: 'COATING'}
-], 'grey')
+], 'enanomapper')
 ```
 
 ### `nanoviz.nanoMaterial`
+
+![Example for the 'enanomapper' style](./example.svg)
 
 Create an SVG with three parts, a core, a shell and a coating.
 
@@ -37,3 +39,18 @@ nanoviz.nanoMaterial(Array<Object> parts, (Array<Object>|Object|String|null) sty
       * `striped`: whether the circle is striped
       * `radius`: radius of the circle (0 - 100)
       * `text`: pair of coordinates where the label should be (x: -100 - 200; y: -100 - 100); note that there is not much space
+
+## Browser
+
+```html
+<div id="svg-container"></div>
+
+<script>const module = {exports: {}}</script>
+<script src="https://unpkg.com/nanoviz-svg"></script>
+<script>
+  window.onload = function () {
+    const element = document.getElementById('svg-container')
+    element.innerHTML = module.exports.nanoMaterial(/* see above */)
+  }
+</script>
+```
