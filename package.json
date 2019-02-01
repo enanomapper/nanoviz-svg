@@ -1,0 +1,27 @@
+{
+  "name": "nanoviz-svg",
+  "version": "0.0.1",
+  "description": "Library to create SVG visualisations for nano materials.",
+  "main": "index.js",
+  "files": [],
+  "scripts": {
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enanomapper/nanoviz-svg.git"
+  },
+  "keywords": [
+    "nanomaterials",
+    "svg"
+  ],
+  "author": "Lars Willighagen <lars.willighagen@gmail.com> (https://larsgw.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enanomapper/nanoviz-svg/issues"
+  },
+  "homepage": "https://github.com/enanomapper/nanoviz-svg#readme",
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}
