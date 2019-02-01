@@ -1,15 +1,15 @@
 const styles = {
   enanomapper: [
-    {color: '#cf2323', textColor: 'white', radius: 40, text: [0, 0]},
-    {color: '#555', textColor: '#555', radius: 70, text: [130, 50]},
-    {color: 'grey', textColor: 'grey', radius: 100, text: [130, -80]}
+    { color: '#cf2323', textColor: 'white', radius: 40, text: [0, 0] },
+    { color: '#555', textColor: '#555', radius: 70, text: [130, 50] },
+    { color: 'grey', textColor: 'grey', radius: 100, text: [130, -80] }
   ],
   nanomaterialRegistry: {
     extends: 'enanomapper',
     parts: [
-      {color: 'orange', textColor: 'white'},
-      {color: 'lightblue', textColor: 'lightblue'},
-      {color: 'lightgrey', textColor: 'lightgrey', striped: true}
+      { color: 'orange', textColor: 'white' },
+      { color: 'lightblue', textColor: 'lightblue' },
+      { color: 'lightgrey', textColor: 'lightgrey', striped: true }
     ]
   }
 }
@@ -69,7 +69,7 @@ function makePart (part, style, defs) {
 module.exports.nanoMaterial = function nanoMaterial (parts, style) {
   style = makeStyle(style)
 
-	const svg = [
+  const svg = [
     '<svg width="300" height="200" viewBox="-100 -100 300 200" font-weight="bold">'
   ]
 
@@ -85,7 +85,7 @@ module.exports.nanoMaterial = function nanoMaterial (parts, style) {
 
   svg.push(graphics.join('\n'))
 
-	svg.push(`
+  svg.push(`
 </svg>`)
 
   return svg.join('')
