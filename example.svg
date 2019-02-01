@@ -1,10 +1,6 @@
 <svg width="300" height="200" viewBox="-100 -100 300 200" font-weight="bold" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <pattern id="stripes-COATING" width="10%" height="10%" viewBox="0,0,4,4" patternTransform="rotate(45)">
-  <path stroke="grey" d="M0,0 V4 M2,0 V4 M4,0 V4"></path>
-</pattern>
-  </defs>
-<circle fill="url(#stripes-COATING)" r="100" />
+
+<circle fill="grey" r="100" />
 <line stroke="grey" stroke-width="3" x1="0" y1="-80" x2="125" y2="-80" />
 <text fill="grey" x="130" y="-80"
       alignment-baseline="middle" text-anchor="start">
