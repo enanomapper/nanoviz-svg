@@ -46,12 +46,11 @@ nanoviz.nanoMaterial(Array<Object> parts, (Array<Object>|Object|String|null) sty
 ```html
 <div id="svg-container"></div>
 
-<script>const module = {exports: {}}</script>
-<script src="https://unpkg.com/nanoviz-svg"></script>
+<script src="https://bundle.run/nanoviz-svg"></script>
 <script>
   window.onload = function () {
     const element = document.getElementById('svg-container')
-    element.innerHTML = module.exports.nanoMaterial(/* see above */)
+    element.innerHTML = nanovizSvg.nanoMaterial(/* see above */)
   }
 </script>
 ```
