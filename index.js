@@ -33,6 +33,10 @@ function makePattern (pattern, id, color) {
       return `<pattern id="${id}" width="10%" height="10%" viewbox="0,0,4,4" patternTransform="rotate(45)">
   <path stroke="${color}" d="M0,0 V4 M2,0 V4 M4,0 V4"></path>
 </pattern>`
+    case 'dotted':
+      return `<pattern id="${id}" width="10%" height="10%" viewbox="0,0,3,3">
+  <circle fill="${color}" r="1" cx="1" cy="1"></circle>
+</pattern>`
   }
 }
 

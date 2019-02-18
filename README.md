@@ -37,7 +37,7 @@ nanoviz.nanoMaterial(Array<Object> parts, (Array<Object>|Object|String|null) sty
       * `color`: fill color
       * `textColor`
       * `striped`: whether the circle is striped (**DEPRECATED: use `pattern`**)
-      * `pattern`: fill pattern (`'striped'`)
+      * `pattern`: fill pattern (`'striped'`, `'dotted'`)
       * `radius`: radius of the circle (0 - 100)
       * `text`: pair of coordinates where the label should be (x: -100 - 200; y: -100 - 100); note that there is not much space
 
