@@ -27,18 +27,25 @@ function makeStyle (style = 'enanomapper') {
   }
 }
 
-function makeStripePattern (id, color) {
-  return `<pattern id="${id}" width="10%" height="10%" viewbox="0,0,4,4" patternTransform="rotate(45)">
+function makePattern (pattern, id, color) {
+  switch (pattern) {
+    case 'striped':
+      return `<pattern id="${id}" width="10%" height="10%" viewbox="0,0,4,4" patternTransform="rotate(45)">
   <path stroke="${color}" d="M0,0 V4 M2,0 V4 M4,0 V4"></path>
 </pattern>`
+  }
 }
 
 function makePart (part, style, defs) {
   let fill
 
-  if (style.striped) {
-    const id = `stripes-${part.label}`
-    defs.push(makeStripePattern(id, style.color))
+  if (style.striped && !style.pattern) {
+    style.pattern = 'striped'
+  }
+
+  if (style.pattern) {
+    const id = `${style.pattern}-${part.label}`
+    defs.push(makePattern(style.pattern, id, style.color))
     fill = `url(#${id})`
   } else {
     fill = style.color
