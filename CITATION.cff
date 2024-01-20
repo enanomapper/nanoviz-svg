@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: Please cite the following works when using this software.
+type: software
+authors:
+  - family-names: Willighagen
+    given-names: Lars
+    orcid: https://orcid.org/0000-0002-4751-4637
+date-released: 2019-02-18
+title: nanoviz-svg
+url: https://github.com/enanomapper/nanoviz-svg
+version: v0.2.0
